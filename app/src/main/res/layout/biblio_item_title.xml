@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="70dp"
+    android:layout_width="match_parent"
+    android:minHeight="70dp"
+    android:id="@+id/item_title"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="22sp"
+        android:textColor="#666"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+
+</RelativeLayout>

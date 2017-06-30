@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/action_bar"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+
+        <ImageView
+            android:id="@+id/close_player"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:padding="10dp"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:src="@drawable/ic_chevron_left_black_48dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <etsiitdevs.com.palioblanco.player.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </etsiitdevs.com.palioblanco.player.PlayerView>
+
+</LinearLayout>

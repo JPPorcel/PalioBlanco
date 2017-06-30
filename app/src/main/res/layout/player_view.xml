@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear_title_song"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/default_cover"/>
+
+        <LinearLayout
+            android:id="@+id/linear_title_song"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/song_name"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/song_autor"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="2dp"
+        style="@style/SeekBarAppTheme"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight=".1">
+        <TextView
+            android:id="@+id/time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:textColor="#000"
+            android:text="0:00"/>
+        <TextView
+            android:id="@+id/time_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:text="0:00"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0.0dp"
+        android:layout_weight=".2">
+
+        <ImageView
+            android:id="@+id/repeat"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="24dp"
+            android:padding="22dp"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:src="@drawable/ic_repeat_off_black_48dp"/>
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:src="@drawable/ic_skip_previous_black_48dp"/>
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:src="@drawable/ic_play_black_48dp"/>
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_skip_next_black_48dp"/>
+
+        <ImageView
+            android:id="@+id/shuffle"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:layout_marginEnd="24dp"
+            android:padding="22dp"
+            android:src="@drawable/ic_shuffle_disabled_black_48dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

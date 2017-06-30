@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        //apply Button style
+        <item name="android:editTextStyle">@style/editTextStyle</item>
+    </style>
+    <style name="AppTheme.Fullscreen" parent="@style/AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="BorderlessButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#ffff9800</item>
+    </style>
+
+    <style name="editTextStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">#000</item>
+        <item name="android:background">#fff</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="SeekBarAppTheme" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/apptheme_scrubber_control_selector_holo_light</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="DialogTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+</resources>

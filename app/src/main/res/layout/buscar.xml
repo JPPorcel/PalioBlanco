@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/action_bar"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17"
+            android:padding="8dp"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:src="@drawable/ic_magnify_black_48dp" />
+
+        <etsiitdevs.com.palioblanco.CustomEditText
+            android:id="@+id/editText"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/search_hint"
+            android:textSize="20sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_above="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/topshadow"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical"
+        android:scrollbarSize="4dp"
+        style="@style/Base.Widget.AppCompat.ListView">
+
+    </ListView>
+
+</LinearLayout>

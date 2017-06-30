@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/action_bar"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:padding="10dp"
+            android:theme="@style/BorderlessButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:clickable="true"
+            android:src="@drawable/ic_chevron_left_black_48dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight=".3">
+
+            <ImageView
+                android:id="@+id/img_playlist"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/default_cover"
+                android:layout_marginStart="21dp"
+                android:padding="6dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_playlist"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#333"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:id="@+id/subtitle"
+                    android:textSize="14sp"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="12dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical"
+            android:scrollbarSize="4dp"
+            style="@style/Base.Widget.AppCompat.ListView"/>
+
+    </LinearLayout>
+
+</LinearLayout>

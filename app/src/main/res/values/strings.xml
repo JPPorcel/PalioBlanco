@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Palio Blanco</string>
+    <string name="text_test">fadsfasdfadsf</string>
+    <string name="play_initial_time">00:00</string>
+    <string name="track_number">Track</string>
+    <string name="search_hint">Buscar</string>
+
+
+    <string name="facebook_app_id">642368849295532</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="hint_city">Introduce tu ciudad:</string>
+    <string name="hint_auto_complete_city">Granada</string>
+    <string name="logup_button">Continuar con Facebook</string>
+    <string name="or">O</string>
+    <string name="login_button">Inicia sesión</string>
+    <string name="biblioteca">Biblioteca</string>
+    <string name="play">Reproducir</string>
+    <string name="add_playlist">Añadir a una lista de reproducción</string>
+    <string name="add_queue">Añadir a la cola</string>
+    <string name="new_playlist">Nueva lista de reproducción</string>
+    <string name="hint_playlist">Introduce un nombre</string>
+    <string name="cancel">Cancelar</string>
+    <string name="crear_add_playlist">Crear y añadir</string>
+    <string name="entra_ahora">Entra ahora</string>
+    <string name="welcome1">Regístrate para acceder a un catálogo con más de 7000 marchas procesionales.</string>
+    <string name="donde_quieras">Donde quieras</string>
+    <string name="welcome2">Escucha tus marchas procesionales favoritas donde y cuando quieras en tu teléfono.</string>
+    <string name="welcome3">Vuelve a revivir la Semana Santa con las marchas procesionales más famosas.</string>
+    <string name="siente">Siente</string>
+    <string name="welcome4">Más de 2000 autores y 7000 marchas procesionales distintas.</string>
+    <string name="creciendo">Creciendo</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+
+
+    <string-array name="languages">
+        <item>Español</item>
+        <item>Inglés</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/downshadow_666"/>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:background="@android:color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_marcha"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/default_cover"
+            android:tint="#333"/>
+
+        <LinearLayout
+            android:id="@+id/linear_title_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/img_marcha"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/song_name"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/song_autor"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/play"
+            android:layout_above="@+id/add_playlist"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#222"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:gravity="start"
+            android:text="@string/play"
+            android:drawablePadding="24dp"
+            android:drawableLeft="@drawable/ic_play_black_24dp"/>
+
+        <TextView
+            android:id="@+id/add_playlist"
+            android:layout_above="@+id/add_cola"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#222"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:gravity="start"
+            android:text="@string/add_playlist"
+            android:drawablePadding="24dp"
+            android:drawableLeft="@drawable/ic_playlist_plus_black_24dp"/>
+
+        <TextView
+            android:id="@+id/add_cola"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp"
+            android:textColor="#222"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:gravity="start"
+            android:layout_marginBottom="12dp"
+            android:text="@string/add_queue"
+            android:drawablePadding="24dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
